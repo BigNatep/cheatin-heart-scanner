@@ -1,0 +1,52 @@
+{
+    "title": "Cheatin' Heart Scanner — Who Ya Lookin' For?",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "email": {
+            "title": "Email Address",
+            "type": "string",
+            "description": "Their email address. The one they use for all their 'newsletters'. E.g. johnno@bigpond.com",
+            "editor": "textfield",
+            "prefill": "johnno@bigpond.com"
+        },
+        "username": {
+            "title": "Username/Handle",
+            "type": "string",
+            "description": "Their online handle. Could be their gamertag, Insta handle, or whatever they call themselves when they think nobody's watchin'.",
+            "editor": "textfield",
+            "prefill": "johnno84"
+        },
+        "phone": {
+            "title": "Phone Number",
+            "type": "string",
+            "description": "Aussie mobile in E.164 format, e.g. +614****5678. The number they 'forgot' to tell you about.",
+            "editor": "textfield",
+            "prefill": "+614"
+        },
+        "fullName": {
+            "title": "Full Name",
+            "type": "string",
+            "description": "Their full name (optional but helps narrow the mongrel down). E.g. John Smith.",
+            "editor": "textfield",
+            "prefill": ""
+        },
+        "platforms": {
+            "title": "Sites to Snoop",
+            "type": "array",
+            "description": "Pick which platforms to check. Leave empty to check 'em all. Don't be shy.",
+            "editor": "stringList",
+            "default": [],
+            "prefill": ["snapchat", "telegram", "instagram", "x", "adultfriendfinder", "pof"]
+        },
+        "state": {
+            "title": "Aussie State",
+            "type": "string",
+            "description": "Narrows results to local AU sites. Pick your state, skip the interstate drama.",
+            "enum": ["", "NSW", "VIC", "QLD", "WA", "SA", "TAS", "ACT", "NT"],
+            "enumTitles": ["All of 'em", "New South Wales", "Victoria", "Queensland", "Western Australia", "South Australia", "Tasmania", "ACT", "Northern Territory"],
+            "default": "",
+            "editor": "select"
+        }
+    }
+}

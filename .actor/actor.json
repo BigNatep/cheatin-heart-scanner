@@ -1,0 +1,25 @@
+{
+    "actorSpecification": 1,
+    "name": "cheatin-heart-scanner",
+    "title": "Cheatin' Heart Scanner — Who's the Dirty Mongrel? (AU Sites)",
+    "version": "0.0",
+    "buildTag": "latest",
+    "meta": {
+        "templateId": "python-crawlee-playwright"
+    },
+    "dockerfile": "../Dockerfile",
+    "readme": "../ACTOR.md",
+    "input": "./INPUT_SCHEMA.json",
+    "output": "../output_schema.json",
+    "defaultMemoryMbytes": 512,
+    "minMemoryMbytes": 256,
+    "maxMemoryMbytes": 1024,
+    "storages": {
+        "dataset": "../dataset_schema.json"
+    },
+    "defaultRunOptions": {
+        "build": "latest",
+        "timeoutSecs": 300,
+        "memoryMbytes": 1024
+    }
+}

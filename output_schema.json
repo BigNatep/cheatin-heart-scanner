@@ -1,0 +1,62 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Cheatin' Heart Results — The Receipts",
+    "type": "object",
+    "properties": {
+        "query": {
+            "title": "What You Asked Us",
+            "type": "string",
+            "template": "{{value}}"
+        },
+        "platform": {
+            "title": "Which Site",
+            "type": "string",
+            "template": "{{value}}"
+        },
+        "profileFound": {
+            "title": "Dinkum or Dodgy?",
+            "type": "string",
+            "template": "{{value}}"
+        },
+        "profileUrl": {
+            "title": "Their Profile Link",
+            "type": "string",
+            "template": "{{value}}"
+        },
+        "username": {
+            "title": "Their Handle There",
+            "type": "string",
+            "template": "{{value}}"
+        },
+        "displayName": {
+            "title": "What They Call Themselves",
+            "type": "string",
+            "template": "{{value}}"
+        },
+        "lastActive": {
+            "title": "Last Time They Were On",
+            "type": "string",
+            "template": "{{value}}"
+        },
+        "bio": {
+            "title": "Their Bio (Cringe Level)",
+            "type": "string",
+            "template": "{{value}}"
+        },
+        "photos": {
+            "title": "How Many Photos",
+            "type": "string",
+            "template": "{{value}}"
+        },
+        "evidence": {
+            "title": "The Receipts",
+            "type": "string",
+            "template": "{{value}}"
+        },
+        "riskScore": {
+            "title": "Dodgy Meter (0-100)",
+            "type": "string",
+            "template": "{{value}}"
+        }
+    }
+}

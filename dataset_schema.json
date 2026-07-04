@@ -1,0 +1,36 @@
+{
+    "actorSpecification": 1,
+    "views": {
+        "overview": {
+            "title": "What We Dug Up",
+            "transformation": {
+                "fields": [
+                    "platform",
+                    "profileFound",
+                    "username",
+                    "displayName",
+                    "lastActive",
+                    "riskScore"
+                ]
+            },
+            "display": {
+                "component": "table"
+            }
+        },
+        "evidence": {
+            "title": "The Full Story",
+            "transformation": {
+                "fields": [
+                    "platform",
+                    "profileUrl",
+                    "bio",
+                    "evidence",
+                    "riskScore"
+                ]
+            },
+            "display": {
+                "component": "table"
+            }
+        }
+    }
+}
